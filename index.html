@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="wrapper">
+        <div class="main-container">
+            <div class="content">
+                <h1 class="content__title">Learn to code by watching others</h1>
+                <p class="content__text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+            </div>
+            <div class="signup">
+                <div class="signup__pricing">
+                    <p>
+                        <span>
+                            Try it free 7 days
+                        </span>
+                        then $20/mo. thereafter
+                    </p>
+                </div>
+                <form action="#" class="signup__form">
+                    <div class="input-group">
+                        <input type="text" id="first-name" placeholder="First Name" oninput="validateInput('first-name')">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="last-name" placeholder="Last Name" oninput="validateInput('last-name')">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Email Address" oninput="validateInput('email')">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Password" oninput="validateInput('password')">
+                    </div>
+                    <button class="signup__submit-button" type="submit">CLAIM YOUR FREE TRIAL</button>
+                    <p class="signup__tas">
+                        By clicking the button, you are aggreeing to our <a href="#">Terms and Services</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
